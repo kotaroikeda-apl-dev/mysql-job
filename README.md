@@ -1,5 +1,8 @@
 ## **概要**
 
+このプロジェクトでは、MySQL を使ったジョブログ管理 を Go で実装しています。
+ジョブログの 登録・取得・更新・リトライ を行い、データベースの基本操作を学べます。
+
 ## **実行方法**
 
 ```sh
@@ -7,6 +10,7 @@ docker compose up -d # データベース起動
 go run cmd/regist/main.go # ジョブログ登録
 go run cmd/get/main.go # ジョブログ取得
 go run cmd/update/main.go # ジョブログ更新
+go run cmd/retry/main.go # 失敗したジョブをリトライ
 docker compose down # データベース停止
 ```
 
