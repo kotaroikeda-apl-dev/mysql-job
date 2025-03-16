@@ -6,6 +6,7 @@
 docker compose up -d # データベース起動
 go run cmd/regist/main.go # ジョブログ登録
 go run cmd/get/main.go # ジョブログ取得
+go run cmd/update/main.go # ジョブログ更新
 docker compose down # データベース停止
 ```
 
